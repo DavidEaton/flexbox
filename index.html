@@ -17,23 +17,30 @@
             Menominee
         </div>
 
-        <div class="user-links bordered">
+        <div class="component-links bordered">
+            <a href="">Payables</a>
+            <a href="">Invoice</a>
+            <a href="">Credit Returns</a>
+            <a href="">Statements</a>
+            <a href="">Vendors</a>
+            <a href="">Reports</a>
+        </div>
+
+
+        <div class="header-links bordered">
             <a href="">About</a>
             <a href="">Sign In</a>
         </div>
     </header>
 
-    <nav class="bordered">
-        (Side) nav content.
-    </nav>
+    <div class="flex-container app">
+        <nav class="bordered">
+            (Side) nav content.
+        </nav>
 
-body
-
-
-
-
-<div class="main-content bordered">
-        Main application content.
+        <div class="main-content bordered">
+            Main application content.
+        </div>
     </div>
 
     <footer class="footer">
@@ -45,6 +52,9 @@ body
 
 </html>
 <style>
+    .app {
+        flex-direction: row;
+    }
     .site {
         display: flex;
         min-height: 100vh;
@@ -57,37 +67,45 @@ body
         flex-wrap: wrap;
     }
 
-    .bordered {
+    /* .bordered {
         border: lemonchiffon;
         border-style: solid;
-    }
+    } */
 
     .mainHeader {
-        height: 5em;
+        height: 4em;
         align-items: center;
         background-color: khaki;
     }
 
-    .user-links {
+    .header-links {
         display: flex;
         justify-content: flex-end;
         flex-grow: 1;
         flex-wrap: wrap;
     }
 
+    .component-links {
+        display: flex;
+        justify-content:space-between;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        padding-left: 10px;
+    }
+
     nav {
         flex-direction: column;
         background-color: lavender;
-        height: 100%;
         width: fit-content;
     }
 
     .main-content {
         background-color: palegreen;
+        min-height: calc(100vh - 95px);
+        flex-grow: 1;
     }
 
     .footer {
-        flex-shrink: 0;
         background-color: khaki;
     }
 </style>
