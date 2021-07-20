@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Felx Nav</title>
+    <base href="/" />
+    <link rel='stylesheet' type='text/css'
+        href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css' />
+</head>
+
+<body class="site">
+
+    <header class="mainHeader flex-container">
+        <div class="bordered">
+            Menominee
+        </div>
+
+        <div class="user-links bordered">
+            <a href="">About</a>
+            <a href="">Sign In</a>
+        </div>
+    </header>
+
+    <nav class="bordered">
+        (Side) nav content.
+    </nav>
+
+body
+
+
+
+
+<div class="main-content bordered">
+        Main application content.
+    </div>
+
+    <footer class="footer">
+        Footer
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+</body>
+
+</html>
+<style>
+    .site {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        background-color: powderblue;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .bordered {
+        border: lemonchiffon;
+        border-style: solid;
+    }
+
+    .mainHeader {
+        height: 5em;
+        align-items: center;
+        background-color: khaki;
+    }
+
+    .user-links {
+        display: flex;
+        justify-content: flex-end;
+        flex-grow: 1;
+        flex-wrap: wrap;
+    }
+
+    nav {
+        flex-direction: column;
+        background-color: lavender;
+        height: 100%;
+        width: fit-content;
+    }
+
+    .main-content {
+        background-color: palegreen;
+    }
+
+    .footer {
+        flex-shrink: 0;
+        background-color: khaki;
+    }
+</style>
