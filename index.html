@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Felx Nav</title>
+    <title>Css Flexbox</title>
     <base href="/" />
     <link rel='stylesheet' type='text/css'
         href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css' />
@@ -18,18 +18,19 @@
         </div>
 
         <div class="component-links bordered">
-            <a href="">Payables</a>
+            &#60; Component links /&#62;
+
+            <!-- <a href="">Payables</a>
             <a href="">Invoice</a>
             <a href="">Credit Returns</a>
             <a href="">Statements</a>
             <a href="">Vendors</a>
-            <a href="">Reports</a>
+            <a href="">Reports</a> -->
         </div>
 
-
         <div class="header-links bordered">
-            <a href="">About</a>
-            <a href="">Sign In</a>
+            <a class="header-link " href="">About</a>
+            <a class="header-link " href="">Sign In</a>
         </div>
     </header>
 
@@ -47,6 +48,7 @@
         Footer
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.min.js" integrity="sha512-suUtSPkqYmFd5Ls30Nz6bjDX+TCcfEzhFfqjijfdggsaFZoylvTj+2odBzshs0TCwYrYZhQeCgHgJEkncb2YVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
 </body>
 
@@ -75,14 +77,26 @@
     .mainHeader {
         height: 4em;
         align-items: center;
-        background-color: khaki;
+        padding-left: 1em;
+        color: white;
+        background-color: #274c77;
+        font-size: 20px;
+        font-family: "Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif";
     }
 
     .header-links {
+        font-size: 12px;
+        
         display: flex;
         justify-content: flex-end;
         flex-grow: 1;
         flex-wrap: wrap;
+        padding: 1em;
+    }
+
+    .header-link {
+        color: white;
+        padding: 1em;
     }
 
     .component-links {
@@ -90,7 +104,7 @@
         justify-content:space-between;
         flex-grow: 1;
         flex-wrap: wrap;
-        padding-left: 10px;
+        padding-left: 2em;
     }
 
     nav {
