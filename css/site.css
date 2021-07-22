@@ -1,0 +1,82 @@
+.app {
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+}
+
+.site {
+    display: flex;
+    /* min-height: 100vh; */
+    flex-direction: column;
+    background-color: powderblue;
+}
+
+.flex-container {
+    display: flex;
+}
+
+/* .bordered {
+    border: lemonchiffon;
+    border-style: solid;
+} */
+
+.mainHeader {
+    height: 4em;
+    align-items: center;
+    padding-left: 1em;
+    color: lightcyan;
+    background-color: #274c77;
+    font-size: 20px;
+    /* font-family: "Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif"; */
+}
+
+.header-links {
+    font-size: 12px;
+
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+.header-link {
+    color: lightcyan;
+    padding: 1em;
+}
+
+.component-links {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding-left: 2em;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #204060;
+    width: fit-content;
+}
+
+nav>a {
+    color: lightcyan;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color:lightcyan;
+    min-height: calc(100vh - 115px);
+}
+
+.footer {
+    background-color: khaki;
+}
+
+.tenant-logo {
+    max-width: 100%;
+    max-height: 100%;
+
+}

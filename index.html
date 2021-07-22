@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Css Flexbox</title>
     <base href="/" />
+    <link rel='stylesheet' type='text/css' href='/css/site.css' />
     <link rel='stylesheet' type='text/css'
         href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css' />
 </head>
@@ -20,12 +21,12 @@
         <div class="component-links bordered">
             &#60; Component links /&#62;
 
-            <!-- <a href="">Payables</a>
+            <a href="">Payables</a>
             <a href="">Invoice</a>
             <a href="">Credit Returns</a>
             <a href="">Statements</a>
             <a href="">Vendors</a>
-            <a href="">Reports</a> -->
+            <a href="">Reports</a>
         </div>
 
         <div class="header-links bordered">
@@ -36,11 +37,23 @@
 
     <div class="flex-container app">
         <nav class="bordered">
+            <a href="">Home</a>
+            <a href="">Daily Board</a>
+            <a href="">Tickets</a>
+            <a href="">Schedule</a>
+            <a href="">Reports</a>
+            <a href="">Inventory</a>
+            <a href="">Customers</a>
+            <a href="">Receiveables</a>
+            <a href="">Payables</a>
+            <a href="">Settings</a>
             (Side) nav content.
         </nav>
 
         <div class="main-content bordered">
-            Main application content.
+            <div class="">
+                <img src="/images/Licketysplitlogo.jpg" class="tenant-logo">
+            </div>
         </div>
     </div>
 
@@ -48,78 +61,10 @@
         Footer
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.min.js" integrity="sha512-suUtSPkqYmFd5Ls30Nz6bjDX+TCcfEzhFfqjijfdggsaFZoylvTj+2odBzshs0TCwYrYZhQeCgHgJEkncb2YVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.min.js"
+        integrity="sha512-suUtSPkqYmFd5Ls30Nz6bjDX+TCcfEzhFfqjijfdggsaFZoylvTj+2odBzshs0TCwYrYZhQeCgHgJEkncb2YVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
 </body>
 
 </html>
-<style>
-    .app {
-        flex-direction: row;
-    }
-    .site {
-        display: flex;
-        min-height: 100vh;
-        flex-direction: column;
-        background-color: powderblue;
-    }
-
-    .flex-container {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    /* .bordered {
-        border: lemonchiffon;
-        border-style: solid;
-    } */
-
-    .mainHeader {
-        height: 4em;
-        align-items: center;
-        padding-left: 1em;
-        color: white;
-        background-color: #274c77;
-        font-size: 20px;
-        font-family: "Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif";
-    }
-
-    .header-links {
-        font-size: 12px;
-        
-        display: flex;
-        justify-content: flex-end;
-        flex-grow: 1;
-        flex-wrap: wrap;
-        padding: 1em;
-    }
-
-    .header-link {
-        color: white;
-        padding: 1em;
-    }
-
-    .component-links {
-        display: flex;
-        justify-content:space-between;
-        flex-grow: 1;
-        flex-wrap: wrap;
-        padding-left: 2em;
-    }
-
-    nav {
-        flex-direction: column;
-        background-color: lavender;
-        width: fit-content;
-    }
-
-    .main-content {
-        background-color: palegreen;
-        min-height: calc(100vh - 95px);
-        flex-grow: 1;
-    }
-
-    .footer {
-        background-color: khaki;
-    }
-</style>
