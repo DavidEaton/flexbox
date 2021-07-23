@@ -1,6 +1,5 @@
 .app {
     flex-direction: row;
-    /* flex-wrap: wrap; */
 }
 
 .site {
@@ -14,11 +13,6 @@
     display: flex;
 }
 
-/* .bordered {
-    border: lemonchiffon;
-    border-style: solid;
-} */
-
 .mainHeader {
     height: 4em;
     align-items: center;
@@ -26,15 +20,12 @@
     color: lightcyan;
     background-color: #274c77;
     font-size: 20px;
-    /* font-family: "Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif"; */
 }
 
 .header-links {
     font-size: 12px;
-
     display: flex;
     justify-content: flex-end;
-    flex-grow: 1;
     flex-wrap: wrap;
     padding: 1em;
 }
@@ -52,7 +43,7 @@
     padding-left: 2em;
 }
 
-nav {
+.side-nav {
     display: flex;
     flex-direction: column;
     background-color: #204060;
@@ -67,7 +58,7 @@ nav>a {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background-color:lightcyan;
+    background-color: lightcyan;
     min-height: calc(100vh - 115px);
 }
 
@@ -78,5 +69,4 @@ nav>a {
 .tenant-logo {
     max-width: 100%;
     max-height: 100%;
-
 }
